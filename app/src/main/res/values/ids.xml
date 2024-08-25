@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_fragment1_to_fragment3" type="id" />
+    <item name="action_fragment1_to_fragment2" type="id" />
+    <item name="action_fragment2_to_fragment3" type="id" />
+</resources>

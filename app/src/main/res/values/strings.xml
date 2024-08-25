@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartQueue</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA5-C_OwF4PSz1y4XcEBcTujXdtde8kUGU</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="hair_design_options">
+        <item>Men haircut</item>
+        <item>Hair straightening</item>
+        <item>Women Fan</item>
+        <item>Hair Coloring</item>
+        <item>Highlights</item>
+        <item>Keratin Treatment</item>
+        <item>Wedding Hair</item>
+        <item>Hair Extensions</item>
+        <item>Layered Cut</item>
+        <item>Curly Hair Styling</item>
+        <item>Root Touch-up</item>
+        <item>Deep Conditioning</item>
+
+    </string-array>
+</resources>

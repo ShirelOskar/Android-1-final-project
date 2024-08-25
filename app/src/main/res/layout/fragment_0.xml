@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/barberframe"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Fragments.Fragment0">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/white">
+    <!-- Welcome Title -->
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shlomi's Salon"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        />
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/lets_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Start"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold"/>
+    <!-- Description of the Hairdresser -->
+
+
+    <TextView
+        android:id="@+id/hairdresser_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\nVisit our salon at:\nHIT Institute \n52 Golomb Street, Holon\n\nOpening Hours:\nSun,Tue,Wed,The,Fri: \n9:00  - 18:00  \nMon,Sat: Closed"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+
+        android:layout_gravity="center"
+        android:padding="20dp"/>
+
+</LinearLayout>
+</ScrollView>

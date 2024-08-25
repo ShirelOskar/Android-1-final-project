@@ -1,0 +1,146 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/barberframe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragments.Fragment4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@android:color/white">
+        <TextView
+            android:id="@+id/adminTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Manage All Appointments"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- DatePicker for Admin to select a date -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Select Date"
+            android:padding="5dp"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/baseline_calendar_today_24"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adminDatePicker"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#C8F4F0"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/loadAppointmentsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:text="Load Appointments By Date"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/resetDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Date"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adminAppointmentDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All appointments:"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/adminAppointmentRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="8dp"
+                android:scrollbars="vertical" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/addNewAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Appointment"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

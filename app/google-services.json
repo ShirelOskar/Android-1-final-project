@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1071772577999",
+    "project_id": "smartqueue1-c63e1",
+    "storage_bucket": "smartqueue1-c63e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071772577999:android:c67fd1413a0a6671b607ba",
+        "android_client_info": {
+          "package_name": "com.example.smartqueue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK9D_nR9R4_ZGk9BCjgQrGxKjZCdOg9fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
